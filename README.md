@@ -1,6 +1,7 @@
 # jekyll-block
 
 [![Build Status](https://travis-ci.com/MaximeKjaer/jekyll-block.svg?branch=master)](https://travis-ci.com/MaximeKjaer/jekyll-block)
+[![Gem Version](https://badge.fury.io/rb/jekyll-block.svg)](https://badge.fury.io/rb/jekyll-block)
 
 `jekyll-block` is a Jekyll plugin that adds a `{% block %}` Liquid block.
 
