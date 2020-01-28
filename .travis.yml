@@ -1,0 +1,16 @@
+sudo: false
+language: ruby
+cache: bundler
+before_install: gem install bundler -v 2.0.2
+script:
+  - bundle exec rake
+  - bundle exec rubocop
+deploy:
+  provider: rubygems
+  api_key:
+    secure: B+x/LA7mNueMslGUAF6eLaB9sw2+KnaWxRmo7u/KIXdiBrLXEar1JyVS06kHWGP4q213Cv6SjZa9hKG6ksoucI12PjhR1ObkIt/fXjiRJaYJTAr6Jn2C8mC2kUILAhYiktdE+xtyl6Q/7QxDB4RYygD396iwfAipU10wBAvcf5Pxkj9GzfFXyJzBO3fdZeYcVfZbkUTvA7ueSQfcY1UQNiTtKiRecXhFHWcYzjsW9ixKDkKVO83fzdvtZBIKL7039jxu1XSCUDSq8IB2Q8o6U16kWNYMZ6UTbUHd0cPtAkEYKkwiYEd15ybPfo41t1M7o52f3hXKbXzjrVjthR/mgQOLXnT22X0bJBrmcyNWa14Ul3gUUdgnxVjH8JrIEgh/eOLmjqj6+ZtN3JkOdIa+e8zoQQPAiyAEOhiQhwtEkjxAFcqpve9nbTWEY7oHcjpMALuiMPhfVGQYz0XJG9TAbOYkfh5YlWm+AUFkNJx1V80zYiSG4z93RqGoiBosYS2pm0dYe1/qjXI97gUI4TfKFD6uiDQztlwdzxnOubsDQLEr8ohGV/fPT9B7gNQiFg9LvmX97Y9BwaYJq88/SEi+hnilnDxzN1WxQ/C01iX75ZcrWqbmW/hWIpfzTs7rETYUzlsK5K+UrVfa70Se7Dw7qIighstSxVBz9hfpKGTUZQQ=
+  gem: jekyll-block
+  on:
+    tags: true
+    branch: master
+    repo: MaximeKjaer/jekyll-block
