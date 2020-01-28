@@ -1,5 +1,7 @@
 # jekyll-block
 
+[![Build Status](https://travis-ci.com/MaximeKjaer/jekyll-block.svg?branch=master)](https://travis-ci.com/MaximeKjaer/jekyll-block)
+
 `jekyll-block` is a Jekyll plugin that adds a `{% block %}` Liquid block.
 
 It is very similar to [Premonition](https://github.com/lazee/premonition), but has a few differences:
