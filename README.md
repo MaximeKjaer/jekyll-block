@@ -16,7 +16,7 @@ Add the following to your `Gemfile`:
 
 ```ruby
 group :jekyll_plugins do
-  gem "jekyll-block", "~> 0.0.0"
+  gem "jekyll-block", "~> 0.0.1"
 end
 ```
 
