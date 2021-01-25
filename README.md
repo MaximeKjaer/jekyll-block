@@ -114,7 +114,7 @@ The above is valid kramdown syntax; kramdown will strip the `markdown` attribute
 </div>
 ```
 
-This approach is different to that taken by most alternative plugins, which typically call a new instance of the Markdown parser for the block's content, instead of relying on syntactic features. That approach breaks some advanced kramdown features, suuch as [link definitions](https://kramdown.gettalong.org/syntax.html#link-definitions), [footnotes](https://kramdown.gettalong.org/syntax.html#footnotes) and [abbreviations](https://kramdown.gettalong.org/syntax.html#abbreviations), as blocks aren't parsed by the same instance as the rest of the document. Instead, `jekyll-block`'s approach ensures that these also work inside `{% block %}` tags.
+This approach is different to that taken by most alternative plugins, which typically call a new instance of the Markdown parser for the block's content, instead of relying on syntactic features. That approach breaks some advanced kramdown features, such as [link definitions](https://kramdown.gettalong.org/syntax.html#link-definitions), [footnotes](https://kramdown.gettalong.org/syntax.html#footnotes) and [abbreviations](https://kramdown.gettalong.org/syntax.html#abbreviations), as blocks aren't parsed by the same instance as the rest of the document. Instead, `jekyll-block`'s approach ensures that these also work inside `{% block %}` tags.
 
 ## Alternatives
 
@@ -122,11 +122,11 @@ This approach is different to that taken by most alternative plugins, which typi
 
   `jekyll-block` is very similar to Premonition, although with a few differences:
 
-  - Does not support the RedCarpet Markdown parser
-  - Uses a Liquid tag instead of custom Markdown syntax
-  - Works in [post excerpts](https://jekyllrb.com/docs/posts/#post-excerpts)
-  - Works with [link definitions](https://kramdown.gettalong.org/syntax.html#link-definitions), [footnotes](https://kramdown.gettalong.org/syntax.html#footnotes) and [abbreviations](https://kramdown.gettalong.org/syntax.html#abbreviations)
-  - Does not support Markdown content when used in HTML pages
+  - Premonition supports both [kramdown](https://github.com/gettalong/kramdown) and [Redcarpet](https://github.com/vmg/redcarpet)
+  - Premonition introduces new Markdown syntax instead of using a Liquid tag
+  - `jekyll-block` works in [post excerpts](https://jekyllrb.com/docs/posts/#post-excerpts)
+  - `jekyll-block` works with [link definitions](https://kramdown.gettalong.org/syntax.html#link-definitions), [footnotes](https://kramdown.gettalong.org/syntax.html#footnotes) and [abbreviations](https://kramdown.gettalong.org/syntax.html#abbreviations)
+  - Premonition supports Markdown content when used in HTML source files, which `jekyll-block` does not
 
 - [Jolt](https://github.com/helpscout/jekyll-jolt)
 
