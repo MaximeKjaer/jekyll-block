@@ -3,7 +3,23 @@
 [![Build Status](https://travis-ci.com/MaximeKjaer/jekyll-block.svg?branch=master)](https://travis-ci.com/MaximeKjaer/jekyll-block)
 [![Gem Version](https://badge.fury.io/rb/jekyll-block.svg)](https://badge.fury.io/rb/jekyll-block)
 
-`jekyll-block` is a [Jekyll](https://github.com/jekyll/jekyll) plugin that adds a `{% block %}` Liquid block tag for use in Markdown posts parsed by [kramdown](https://github.com/gettalong/kramdown).
+`jekyll-block` is a [Jekyll](https://github.com/jekyll/jekyll) plugin that adds a `{% block %}` Liquid block tag for use in Markdown posts parsed by [kramdown](https://github.com/gettalong/kramdown). 
+
+## Example
+
+Blocks are useful for highlighting specific pieces of text. For instance, the following theorem box is a box: 
+
+<p align="center">
+  <img src="https://i.imgur.com/nWoQyZR.png" alt="Example of a theorem block" width="600;"/>
+</p>
+
+This box is created by the following Markdown snippet.
+
+```markdown
+{% block theorem "Hall's theorem" %}
+An $n$ by $n$ bypartite graph $G = (A \cup B, E')$ has a perfect matching **if and only if** $\abs{S} \le \abs{N(S)}$ for all $S \subseteq A$
+{% endblock %}
+```
 
 ## Installation
 
